@@ -8,6 +8,7 @@
 }
 
 body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   font-family: "Lato", sans-serif;
   height: 100vh;
   display: flex;
@@ -23,3 +24,25 @@ h2 {
   top: 10px;
 }
 /* End: Global Styles */
+
+.range-container {
+  position: relative;
+}
+
+input[type="range"] {
+  width: 300px;
+  margin: 18px 0;
+  -webkit-appearance: none;
+}
+
+input[type="range"] + label {
+  background-color: #fff;
+  position: absolute;
+  top: -25px;
+  left: 110px;
+  width: 80px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
