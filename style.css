@@ -68,6 +68,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   border: 1px solid purple;
   margin-top: -7px;
+  cursor: pointer;
 }
 /* End: Chrome + Safari browser */
 
@@ -88,5 +89,28 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   border: 1px solid purple;
   margin-top: -7px;
+  cursor: pointer;
 }
 /* End: Firefox browser */
+
+/* Start: Internet Explorer browser */
+input[type="range"]::-ms-track {
+  background: purple;
+  border-radius: 4px;
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  background: #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid purple;
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+/* End: Internet Explorer browser */
